@@ -3,7 +3,7 @@ type Produto = {
     valor: number
 }
 
-// class Estabelecimento {
+// class EstabelecimentoBase {
 //     private endereco: string
 //     private setor: string
 //     private produtos: Produto[]
@@ -15,7 +15,7 @@ type Produto = {
 // }
 // Tudo isso pode ser resumido via ts para:
 
-class Estabelecimento {
+class EstabelecimentoBase {
     private _filaDeEspera = 10
 
     constructor (
@@ -52,7 +52,7 @@ class Estabelecimento {
     }
 }
 
-const padaria = new Estabelecimento(
+const padaria = new EstabelecimentoBase(
     'Rua A, 12, X', 
     'alimentação', 
     [
